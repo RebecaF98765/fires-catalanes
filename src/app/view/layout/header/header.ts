@@ -1,4 +1,4 @@
-import { Component, output, OutputEmitterRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,9 +8,4 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.css'
 })
 export class Header {
-  public pageSelected: OutputEmitterRef<string> = output<string>();
-
-  public onSelectPage(page: string): void {
-    this.pageSelected.emit(page);
-  }
 }
