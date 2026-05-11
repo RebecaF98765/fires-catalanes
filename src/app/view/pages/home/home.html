@@ -1,1 +1,35 @@
-<p>home works!</p>
+<main class="home-layout">
+
+  <section class="left-zone">
+    <app-regions-list
+      [regions]="regions"
+      (regionSelected)="onRegionSelected($event)">
+    </app-regions-list>
+
+    <app-region-fairs-list
+      [region]="selectedRegion()"
+      [fairs]="selectedFairs"
+      (favoriteSelected)="onAddFavorite($event)"
+      (fairDetailsSelected)="onShowDetails($event)">
+    </app-region-fairs-list>
+  </section>
+
+  <section class="right-zone">
+    <h2>Fires preferides</h2>
+
+    @if(favoriteFairs.length > 0) {
+      @for(fair of favoriteFairs; track fair.activityId) {
+        <article class="favorite-card">
+          <h3>{{ fair.activityName }}</h3>
+          <p><strong>Poble:</strong> {{ fair.municipalityName }}</p>
+
+          <button (click)="onRemoveFavorite(fair)">Desmarcar</button>
+          <button (click)="onShowDetails(fair)">Veure detalls</button>
+        </article>
+      }
+    } @else {
+      <p>No tens cap fira preferida.</p>
+    }
+  </section>
+
+</main>

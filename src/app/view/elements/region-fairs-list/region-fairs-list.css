@@ -1,7 +1,7 @@
 .fairs-box {
   border: 2px solid #c084fc;
   border-radius: 16px;
-  padding: 20px;
+  padding: 25px;
   background-color: white;
 }
 
@@ -29,4 +29,14 @@
 
 button {
   margin-right: 8px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #9333ea;
+  background: white;
+  color: #7c3aed;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ede9fe;
 }

@@ -1,1 +1,15 @@
-<p>comarques works!</p>
+<main class="comarques-layout">
+
+  <app-regions-list
+    [regions]="regions"
+    (regionSelected)="onRegionSelected($event)">
+  </app-regions-list>
+
+  <app-region-fairs-list
+    [region]="selectedRegion()"
+    [fairs]="selectedFairs"
+    (favoriteSelected)="onAddFavorite($event)"
+    (fairDetailsSelected)="onShowDetails($event)">
+  </app-region-fairs-list>
+
+</main>

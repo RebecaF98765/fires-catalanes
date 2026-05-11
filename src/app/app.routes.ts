@@ -11,5 +11,7 @@ export const routes: Routes = [
   { path: 'home', component: Home },
   { path: 'comarques', component: Comarques },
   { path: 'preferides', component: Preferides },
-  { path: 'details', component: Details }
+  { path: 'details', component: Details },
+
+  { path: '**', redirectTo: 'home' }
 ];

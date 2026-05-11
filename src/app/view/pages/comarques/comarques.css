@@ -1,0 +1,8 @@
+.comarques-layout {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 25px;
+  padding: 30px;
+  background: #f3e8ff;
+  min-height: 100vh;
+}

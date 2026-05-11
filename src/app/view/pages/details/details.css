@@ -1,0 +1,31 @@
+.details-page {
+  margin: 30px;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  border: 2px solid #c084fc;
+  box-shadow: 0 4px 14px #00000022;
+}
+
+.details-page h2 {
+  color: #7c3aed;
+  font-size: 34px;
+}
+
+.details-page p {
+  font-size: 18px;
+}
+
+button {
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #9333ea;
+  background: white;
+  color: #7c3aed;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ede9fe;
+}

@@ -1,1 +1,43 @@
-<p>details works!</p>
+<section class="details-page">
+
+  @if(fair) {
+    <button (click)="onBack()">Tornar</button>
+
+    <h2>{{ fair.activityName }}</h2>
+
+    <p><strong>Comarca:</strong> {{ fair.regionName }}</p>
+    <p><strong>Població:</strong> {{ fair.municipalityName }}</p>
+    <p><strong>Organitzador:</strong> {{ fair.organizerName }}</p>
+    <p><strong>Adreça:</strong> {{ fair.organizerAddress }}</p>
+    <p><strong>Telèfon:</strong> {{ fair.organizerPhone }}</p>
+
+    @if(fair.organizerEmail) {
+      <p><strong>Email:</strong> {{ fair.organizerEmail }}</p>
+    }
+
+    @if(fair.organizerWeb) {
+      <p><strong>Web:</strong> {{ fair.organizerWeb }}</p>
+    }
+
+    @if(fair.startDate || fair.endDate) {
+      <p><strong>Data:</strong> {{ fair.startDate }} - {{ fair.endDate }}</p>
+    }
+
+    @if(fair.products) {
+      <p><strong>Productes:</strong> {{ fair.products }}</p>
+    }
+
+    @if(fair.periodicity) {
+      <p><strong>Periodicitat:</strong> {{ fair.periodicity }}</p>
+    }
+
+    @if(fair.sector) {
+      <p><strong>Sector:</strong> {{ fair.sector }}</p>
+    }
+
+  } @else {
+    <h2>No hi ha cap fira seleccionada</h2>
+    <button (click)="onBack()">Tornar</button>
+  }
+
+</section>
