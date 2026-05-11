@@ -1,0 +1,11 @@
+<section class="regions-box">
+  <h2>Selecciona una comarca</h2>
+
+  <select (change)="onSelectRegion($event)">
+    <option value="">-- Tria una comarca --</option>
+
+    @for(region of regions(); track region) {
+      <option [value]="region">{{ region }}</option>
+    }
+  </select>
+</section>

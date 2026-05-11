@@ -1,0 +1,16 @@
+.regions-box {
+  background: white;
+  border: 2px solid #c084fc;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.regions-box h2 {
+  color: #7c3aed;
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #9333ea;
+}

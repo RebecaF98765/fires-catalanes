@@ -1,0 +1,32 @@
+.fairs-box {
+  border: 2px solid #c084fc;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: white;
+}
+
+.fairs-box h2 {
+  color: #7c3aed;
+}
+
+.fair-card {
+  background-color: #faf5ff;
+  border: 1px solid #d8b4fe;
+  border-left: 6px solid #9333ea;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.fair-card h3 {
+  color: #7c3aed;
+  font-size: 24px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+button {
+  margin-right: 8px;
+}

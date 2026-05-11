@@ -1,0 +1,20 @@
+<section class="fairs-box">
+  <h2>Llistat de fires</h2>
+
+  @if(region()) {
+    @for(fair of fairs(); track fair.activityId) {
+      <article class="fair-card">
+        <h3>{{ fair.activityName }}</h3>
+
+        <p><strong>Poble:</strong> {{ fair.municipalityName }}</p>
+
+        <div class="buttons">
+          <button (click)="onAddFavorite(fair)">Marcar preferida</button>
+          <button (click)="onShowDetails(fair)">Veure detalls</button>
+        </div>
+      </article>
+    }
+  } @else {
+    <p>Selecciona una comarca per veure les fires.</p>
+  }
+</section>
